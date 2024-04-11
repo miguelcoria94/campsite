@@ -1,0 +1,30 @@
+<%- include('../partials/header') %>
+
+<h1>Add a New Campsite</h1>
+
+<form action="/campsites" method="POST">
+  <label for="campsite">Campsite Name:</label>
+  <input type="text" id="campsite" name="campsite" required><br>
+
+  <label for="location">Location:</label>
+  <input type="text" id="location" name="location" required><br>
+
+  <label for="longitude">Longitude:</label>
+  <input type="text" id="longitude" name="longitude" required><br>
+
+  <label for="latitude">Latitude:</label>
+  <input type="text" id="latitude" name="latitude" required><br>
+
+  <label for="season">Season:</label>
+  <input type="text" id="season" name="season" required><br>
+
+  <label for="description">Description:</label>
+  <textarea id="description" name="description" required></textarea><br>
+
+  <label for="mpaaRating">Rating:</label>
+  <input type="text" id="mpaaRating" name="mpaaRating" required><br>
+
+  <input type="submit" value="Submit">
+</form>
+
+<%- include('../partials/footer') %>
